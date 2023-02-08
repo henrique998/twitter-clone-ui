@@ -1,39 +1,39 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
-  *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    :focus {
-        outline: 0;
-        box-shadow: 0 0 0 2px ${(props) => props.theme.white};
-    }
+  :focus {
+    outline: 0;
+    /* box-shadow: 0 0 0 2px ${(props) => props.theme['twitter-blue']}; */
+  }
 
-    body {
-        background-color: ${(props) => props.theme['base-background']};
-        -webkit-font-smoothing: antialiased;
-    }
+  body {
+    background-color: ${(props) => props.theme.background};
+    -webkit-font-smoothing: antialiased;
+  }
 
-    body, input, textarea, button {
-        /* font-family: 'Nunito', sans-serif; */
-        font-weight: 400;
-        font-size: 1rem;
-    }
+  body, input, textarea, button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
 
-    a {
-        text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 
-    ul {
-        list-style: none;
-    }
+  ul {
+    list-style: none;
+  }
 
     button {
-        cursor: pointer;
-        background: transparent;
-        border: 0;
+      cursor: pointer;
+      background: transparent;
+      border: 0;
     }
 `

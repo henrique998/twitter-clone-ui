@@ -1,13 +1,18 @@
 import styled from 'styled-components'
 
-export const NewTweetForm = styled.form`
+export const StatusContainer = styled.main``
+
+export const AnswerForm = styled.form`
   padding: 1.5rem 1.25rem;
+  border-bottom: 1px solid ${({ theme }) => theme.border};
 
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
 
   label {
+    flex: 1;
     display: flex;
     gap: 0.75rem;
 
@@ -35,7 +40,11 @@ export const NewTweetForm = styled.form`
   }
 
   button {
-    margin-left: auto;
+    /* margin-left: auto; */
     max-width: fit-content;
+  }
+
+  @media (max-width: 780px) {
+    font-size: 1rem;
   }
 `
